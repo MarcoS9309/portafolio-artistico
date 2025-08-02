@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vista Previa Generator</title>
+    <style>
+        .preview {
+            width: 1200px;
+            height: 630px;
+            background: linear-gradient(135deg, #8b4513, #daa520);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+        .content {
+            z-index: 2;
+        }
+        .title {
+            font-family: Georgia, serif;
+            font-size: 72px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .subtitle {
+            font-size: 36px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .description {
+            font-size: 24px;
+            margin-bottom: 30px;
+            opacity: 0.8;
+        }
+        .url {
+            font-size: 20px;
+            opacity: 0.7;
+            font-family: Courier;
+        }
+        .ornament {
+            font-size: 48px;
+            margin: 20px 0;
+            opacity: 0.6;
+        }
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+        }
+        button {
+            background: #8b4513;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Vista Previa de tu Portafolio</h1>
+        <div class="preview" id="preview">
+            <div class="content">
+                <div class="title">Individuación y Creación</div>
+                <div class="ornament">—</div>
+                <div class="subtitle">Marcos - Escritor • Creador • Pensador</div>
+                <div class="description">Creaciones digitales y escritos reflexivos<br>Tecnología, filosofía y experiencia personal</div>
+                <div class="url">marcos9309.github.io/portafolio-artistico</div>
+            </div>
+        </div>
+        <button onclick="downloadImage()">Descargar como Imagen</button>
+        <p><small>Clic derecho en la imagen de arriba → "Guardar imagen como" → Nombrar "preview.jpg"</small></p>
+    </div>
+    
+    <script>
+        function downloadImage() {
+            alert('Clic derecho en la imagen de arriba y selecciona "Guardar imagen como". Nómbrala "preview.jpg" y guárdala en tu carpeta images/');
+        }
+    </script>
+</body>
+</html>
