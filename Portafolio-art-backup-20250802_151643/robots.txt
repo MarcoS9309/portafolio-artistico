@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: /sitemap.xml
+
+# Disallow crawling of sensitive directories
+Disallow: /js/
+Disallow: /css/
+Disallow: /*.html$
+
+# Allow main pages
+Allow: /index.html
+Allow: /galeria.html
+Allow: /sobre-mi.html
+Allow: /blog.html
+Allow: /contacto.html
+
+# Crawl delay for respectful bots
+Crawl-delay: 1
