@@ -38,6 +38,9 @@ python3 -m http.server 8000
 # Visitar: http://localhost:8000
 ```
 
+## 📚 Recursos Recomendados
+Consulta [RECURSOS.md](RECURSOS.md) para enlaces sobre documentación, accesibilidad, optimización y diseño.
+
 ## 📜 Licencia
 - **Código:** MIT License
 - **Contenido creativo:** © 2025 Marcos
