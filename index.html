@@ -23,6 +23,7 @@
     
     <title>Individuación y Creación - Marcos</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/chatbot.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
@@ -109,6 +110,24 @@
         </div>
     </footer>
 
+    <!-- Chatbot -->
+    <!-- Botón flotante del chatbot -->
+    <button id="chatbot-toggle" onclick="toggleChatbot()">💬</button>
+
+    <!-- Ventana del chatbot -->
+    <div id="chatbot-box">
+        <div class="chatbot-header">
+            <span>💬 Asistente virtual de las creaciones de Marco</span>
+            <button onclick="toggleChatbot()" class="close-btn">✕</button>
+        </div>
+        <div id="chat-messages"></div>
+        <div class="chatbot-input-area">
+            <input type="text" id="chatbot-input" placeholder="Escribe aquí..." onkeydown="if(event.key==='Enter') sendMessage()"/>
+            <button id="chatbot-send" onclick="sendMessage()">▶</button>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
 </body>
 </html>
