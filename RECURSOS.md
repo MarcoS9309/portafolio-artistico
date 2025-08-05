@@ -7,6 +7,10 @@ Esta sección reúne enlaces útiles para seguir desarrollando y manteniendo el 
 - [W3C Web Accessibility Initiative](https://www.w3.org/WAI/) — Recomendaciones oficiales para accesibilidad web.
 - [web.dev](https://web.dev/learn/) — Recursos sobre rendimiento, SEO y buenas prácticas de desarrollo.
 
+## Ética y Uso Responsable de IA
+- [Guía de Ética de la IA de la UNESCO](https://unesdoc.unesco.org/ark:/48223/pf0000371137) — Marco global para el uso responsable de IA.
+- [Directrices para una IA fiable de la Comisión Europea](https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai) — Principios de transparencia, seguridad y control humano.
+
 ## Diseño y Prototipado
 - [Figma](https://www.figma.com/) — Herramienta colaborativa para diseño de interfaces.
 - [Adobe Color](https://color.adobe.com/es) — Generador de paletas de color y exploración de combinaciones.
