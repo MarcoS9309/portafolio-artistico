@@ -38,6 +38,20 @@ python3 -m http.server 8000
 # Visitar: http://localhost:8000
 ```
 
+## 📚 Recursos Recomendados
+Consulta [RECURSOS.md](RECURSOS.md) para enlaces sobre documentación, accesibilidad, optimización y diseño.
+
+## 🤖 Integración de IA
+1. Investigación de guías oficiales sobre uso responsable de IA (UNESCO, Comisión Europea).
+2. Apoyo de ChatGPT en la redacción de contenidos y organización de recursos.
+3. Revisión humana de cada aporte sugerido por la IA antes de incorporarlo.
+
+Este proyecto se presenta como un ejemplo de integración donde la IA complementa el proceso creativo sin reemplazar la autoría humana.
+
+## 🙏 Créditos
+- Asistencia en redacción: ChatGPT (OpenAI).
+- Referencias éticas: [Guía de Ética de la IA de la UNESCO](https://unesdoc.unesco.org/ark:/48223/pf0000371137) y [Directrices para una IA fiable de la Comisión Europea](https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai).
+
 ## 📜 Licencia
 - **Código:** MIT License
 - **Contenido creativo:** © 2025 Marcos

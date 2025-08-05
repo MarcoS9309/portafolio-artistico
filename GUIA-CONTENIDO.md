@@ -106,6 +106,12 @@ En `contacto.html`:
 - Adobe Color
 - Extrae colores de tus propias obras
 
+### Documentación y buenas prácticas:
+- [MDN Web Docs](https://developer.mozilla.org/es/)
+- [W3C WAI](https://www.w3.org/WAI/)
+- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse)
+- [WAVE](https://wave.webaim.org/) para evaluar accesibilidad
+
 ## 🚀 **Después de Subir Contenido**
 
 1. **Prueba todo**: Navega por todas las páginas
