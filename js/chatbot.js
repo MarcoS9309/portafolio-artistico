@@ -8,7 +8,8 @@ const quickQuestions = [
     "¿Cómo navego por el portafolio?",
     "¿Qué hay en el blog?",
     "¿Cómo contacto a Marco?",
-    "¿De qué tratan las creaciones?"
+    "¿De qué tratan las creaciones?",
+    "¿Cómo seguir las publicaciones?"
 ];
 
 // Respuestas específicas para navegación y contenido del portafolio
@@ -23,10 +24,14 @@ const botResponses = {
     '¿qué encontraré en la galería?': 'En la galería encontrarás los proyectos creativos de Marco: escritos, desarrollos tecnológicos y reflexiones que combinan filosofía y experiencia personal.',
     'blog': 'El blog contiene las reflexiones personales y diario de Marco sobre su proceso creativo, aprendizaje y experiencias. Accede desde "Blog" en el menú.',
     '¿qué hay en el blog?': 'El blog es el espacio reflexivo de Marco donde comparte su viaje de aprendizaje, pensamientos sobre creación y experiencias personales.',
-    'contacto': 'Para contactar a Marco, ve a la página "Contacto" en el menú superior o escribe directamente a: alligator9339@protonmail.com',
-    '¿cómo contacto a marco?': 'Puedes contactar a Marco a través de la página "Contacto" en el menú principal o enviando un email a alligator9339@protonmail.com',
+    'contacto': 'Para contactar a Marco: visita "Contacto" en el menú, envía un email a alligator9339@protonmail.com, síguelo en X (Twitter) o encuentra sus proyectos en GitHub.',
+    '¿cómo contacto a marco?': 'Puedes contactar a Marco de varias formas: email (alligator9339@protonmail.com), X (Twitter), GitHub, o a través de la página "Contacto".',
     
-    // Contenido y propósito
+    // Publicaciones y seguimiento
+    'publicaciones': 'Las publicaciones recientes aparecen en la página principal y completas en el "Blog". Marco publica reflexiones sobre su proceso creativo regularmente.',
+    '¿cómo seguir las publicaciones?': 'Puedes seguir las publicaciones de Marco a través de su blog, X (Twitter) para actualizaciones rápidas, o GitHub para proyectos de código.',
+    'blog': 'El blog contiene las reflexiones personales y diario de Marco sobre su proceso creativo, aprendizaje y experiencias. También puedes ver un resumen en "Publicaciones Recientes" en la página principal.',
+    '¿qué hay en el blog?': 'El blog incluye publicaciones completas sobre el proceso creativo de Marco, reflexiones personales, actualizaciones de proyectos y pensamientos sobre tecnología y arte.',    // Contenido y propósito
     '¿de qué tratan las creaciones?': 'Las creaciones de Marco integran tecnología, filosofía y experiencia personal. Son trabajos que exploran la individuación, el aprendizaje y la expresión creativa.',
     'sobre marco': 'Para conocer más sobre Marco, visita la sección "Sobre Mí" donde comparte su historia, enfoque creativo y filosofía personal.',
     

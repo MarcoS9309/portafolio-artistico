@@ -8,7 +8,7 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--color-primary, #8b4513), var(--color-secondary, #daa520));
+    background: linear-gradient(135deg, var(--primary-color, #8b4513), var(--secondary-color, #daa520));
     border: none;
     color: white;
     font-size: 24px;
@@ -61,7 +61,7 @@
 
 /* Header del chatbot */
 .chatbot-header {
-    background: linear-gradient(135deg, var(--color-primary, #8b4513), var(--color-secondary, #daa520));
+    background: linear-gradient(135deg, var(--primary-color, #8b4513), var(--secondary-color, #daa520));
     color: white;
     padding: 15px;
     display: flex;
@@ -110,7 +110,7 @@
 
 .quick-questions h4 {
     margin: 0 0 10px 0;
-    color: var(--color-primary, #8b4513);
+    color: var(--primary-color, #8b4513);
     font-size: 14px;
     font-weight: 600;
 }
@@ -124,7 +124,7 @@
 .question-btn {
     background: linear-gradient(135deg, rgba(139, 69, 19, 0.1), rgba(218, 165, 32, 0.1));
     border: 1px solid rgba(139, 69, 19, 0.2);
-    color: var(--color-primary, #8b4513);
+    color: var(--primary-color, #8b4513);
     padding: 8px 12px;
     border-radius: 15px;
     cursor: pointer;
@@ -140,7 +140,7 @@
 
 .guide-message {
     background: #f8f9fa;
-    border-left: 4px solid var(--color-primary, #8b4513);
+    border-left: 4px solid var(--primary-color, #8b4513);
     padding: 12px;
     margin-bottom: 15px;
     border-radius: 0 8px 8px 0;
@@ -171,7 +171,7 @@
 }
 
 .message.user .message-content {
-    background: linear-gradient(135deg, var(--color-primary, #8b4513), var(--color-secondary, #daa520));
+    background: linear-gradient(135deg, var(--primary-color, #8b4513), var(--secondary-color, #daa520));
     color: white;
 }
 
@@ -206,11 +206,11 @@
 }
 
 #chatbot-input:focus {
-    border-color: var(--color-primary, #8b4513);
+    border-color: var(--primary-color, #8b4513);
 }
 
 #chatbot-send {
-    background: linear-gradient(135deg, var(--color-primary, #8b4513), var(--color-secondary, #daa520));
+    background: linear-gradient(135deg, var(--primary-color, #8b4513), var(--secondary-color, #daa520));
     border: none;
     color: white;
     width: 40px;
