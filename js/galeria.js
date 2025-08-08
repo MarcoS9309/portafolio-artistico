@@ -63,23 +63,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Efecto hover mejorado para elementos de galería
-    galleryItems.forEach(item => {
-        const overlay = item.querySelector('.gallery-overlay');
-        
-        item.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-5px) scale(1.02)';
+    addHoverEffect(
+        galleryItems,
+        item => {
+            const overlay = item.querySelector('.gallery-overlay');
+            item.style.transform = 'translateY(-5px) scale(1.02)';
             if (overlay) {
                 overlay.style.opacity = '1';
             }
-        });
-        
-        item.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
+        },
+        item => {
+            const overlay = item.querySelector('.gallery-overlay');
+            item.style.transform = 'translateY(0) scale(1)';
             if (overlay) {
                 overlay.style.opacity = '0';
             }
-        });
-    });
+        }
+    );
 
     // Contador de obras por categoría
     updateWorkCount();

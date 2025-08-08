@@ -66,18 +66,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Efecto hover mejorado para elementos interactivos
     const interactiveElements = document.querySelectorAll('.btn, .card, .gallery-item');
-    interactiveElements.forEach(element => {
-        element.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-2px)';
-        });
-        
-        element.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0)';
-        });
-    });
+    addHoverEffect(
+        interactiveElements,
+        el => {
+            el.style.transform = 'translateY(-2px)';
+        },
+        el => {
+            el.style.transform = 'translateY(0)';
+        }
+    );
 });
 
 // ===== UTILIDADES =====
+
+// Agrega efectos hover personalizados a una lista de elementos
+function addHoverEffect(elements, onEnter, onLeave) {
+    elements.forEach(element => {
+        element.addEventListener('mouseenter', () => onEnter(element));
+        element.addEventListener('mouseleave', () => onLeave(element));
+    });
+}
 
 // Función para mostrar notificaciones
 function showNotification(message, type = 'info') {
