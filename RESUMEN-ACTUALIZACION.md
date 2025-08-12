@@ -15,14 +15,14 @@
 - ✅ Estilo más limpio y profesional
 - ✅ Mantiene elegancia vintage sin elementos infantiles
 
-### � **Actualización Visual Completa**
+### 🖼️ **Actualización Visual Completa**
 
 #### **Foto de Perfil Actualizada**
 - ✅ Nueva foto de perfil de GitHub: `https://avatars.githubusercontent.com/u/217665993?v=4`
 - ✅ Integración elegante con fallback profesional
 
 #### **Imágenes de Escritos y Reflexiones**
-- �📝 **Cuento reflexivo**: Imagen principal de narrativa
+- 🖼️📝 **Cuento reflexivo**: Imagen principal de narrativa
 - 🏛️ **Reflexiones teológicas**: Imágenes de documentos filosóficos
 - 💻 **Proyectos tecnológicos**: Screenshots de desarrollo
 - 📚 **Escritos educativos**: Capturas de reflexiones pedagógicas
@@ -89,7 +89,7 @@ Contenido real integrado desde tus blogs:
 | `sobre-mi.html` | ✅ **MEJORADA** | **Imágenes reales, contenido expandido** |
 | `contacto.html` | ✅ Completada | Formulario funcional, FAQ actualizado |
 
-### � **Últimas Actualizaciones**
+### 🆕 **Últimas Actualizaciones**
 
 #### **Secciones Temáticas con Imágenes:**
 1. **Narrativa y Cuentos Reflexivos**
