@@ -163,7 +163,7 @@ En `contacto.html`:
 ```
 
 ¿Quieres que te ayude a:
-1. � **Preparar más espacios para imágenes específicas**
+1. 🖼️ **Preparar más espacios para imágenes específicas**
 2. 🎨 **Crear categorías adicionales** basadas en tu trabajo  
 3. 🛠️ **Automatizar la integración** cuando tengas las imágenes listas
 4. 📧 **Actualizar la información de contacto** con tus datos reales
