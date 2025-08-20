@@ -1002,6 +1002,102 @@ main {
     margin-right: auto;
 }
 
+/* Contact page styles */
+.contact-hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-hero-description {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--text-light);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.contact-link:hover {
+    color: var(--primary-color);
+}
+
+.contact-link:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+.social-link-extended {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-family: var(--font-body);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+.social-link-extended:hover {
+    color: var(--primary-color);
+    transform: translateX(10px);
+}
+
+.social-link-extended:focus {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+}
+
+/* Contact cards */
+.contact-card-primary {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: rgba(139, 69, 19, 0.05);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--primary-color);
+}
+
+.contact-card-secondary {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: rgba(218, 165, 32, 0.05);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--secondary-color);
+}
+
+.contact-card-title {
+    font-family: var(--font-display);
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.contact-card-text {
+    font-family: var(--font-body);
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+.contact-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact-link-label {
+    font-weight: bold;
+}
+
 /* Gallery item styles */
 .gallery-item-wide {
     grid-column: span 2;

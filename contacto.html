@@ -16,17 +16,17 @@
 </head>
 <body>
     <!-- Navegación -->
-    <nav style="background: linear-gradient(135deg, rgba(139, 69, 19, 0.95), rgba(218, 165, 32, 0.95)); backdrop-filter: blur(10px); box-shadow: 0 4px 20px rgba(139, 69, 19, 0.2); position: sticky; top: 0; z-index: 100; padding: 1rem 0;">
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-            <a href="index.html" style="font-family: var(--font-display); font-size: 1.8rem; color: var(--color-cream); text-decoration: none; font-weight: bold;">
+    <nav class="nav-custom">
+        <div class="container nav-flex">
+            <a href="index.html" class="nav-logo">
                 Individuación y creación
             </a>
-            <ul style="display: flex; list-style: none; margin: 0; padding: 0; gap: 2rem;">
-                <li><a href="index.html" style="color: var(--color-cream); text-decoration: none; font-family: 'Lato', sans-serif; font-size: 1.1rem; transition: all 0.3s ease;" onmouseover="this.style.color='var(--color-secondary)'" onmouseout="this.style.color='var(--color-cream)'">Inicio</a></li>
-                <li><a href="galeria.html" style="color: var(--color-cream); text-decoration: none; font-family: 'Lato', sans-serif; font-size: 1.1rem; transition: all 0.3s ease;" onmouseover="this.style.color='var(--color-secondary)'" onmouseout="this.style.color='var(--color-cream)'">Creaciones</a></li>
-                <li><a href="sobre-mi.html" style="color: var(--color-cream); text-decoration: none; font-family: 'Lato', sans-serif; font-size: 1.1rem; transition: all 0.3s ease;" onmouseover="this.style.color='var(--color-secondary)'" onmouseout="this.style.color='var(--color-cream)'">Sobre Mí</a></li>
-                <li><a href="blog.html" style="color: var(--color-cream); text-decoration: none; font-family: 'Lato', sans-serif; font-size: 1.1rem; transition: all 0.3s ease;" onmouseover="this.style.color='var(--color-secondary)'" onmouseout="this.style.color='var(--color-cream)'">Blog</a></li>
-                <li><a href="contacto.html" style="color: var(--color-secondary); text-decoration: none; font-family: 'Lato', sans-serif; font-size: 1.1rem; border-bottom: 2px solid var(--color-secondary);">Contacto</a></li>
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link-custom">Inicio</a></li>
+                <li><a href="galeria.html" class="nav-link-custom">Creaciones</a></li>
+                <li><a href="sobre-mi.html" class="nav-link-custom">Sobre Mí</a></li>
+                <li><a href="blog.html" class="nav-link-custom">Blog</a></li>
+                <li><a href="contacto.html" class="nav-link-custom nav-link-active">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -34,12 +34,12 @@
     <!-- Contenido Principal -->
     <main>
         <!-- Hero Section -->
-        <section style="padding: 6rem 0; background: linear-gradient(135deg, rgba(139, 69, 19, 0.1), rgba(218, 165, 32, 0.1)); position: relative;">
+        <section class="hero-gradient" style="padding: 6rem 0;">
             <div class="container text-center">
-                <h1 style="font-family: var(--font-display); font-size: 4rem; color: var(--color-primary); margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);">
+                <h1 class="contact-hero-title">
                     Compartiendo en Casa y en la Red
                 </h1>
-                <p style="font-family: 'Lato', sans-serif; font-style: italic; font-size: 1.3rem; color: var(--color-text-light); max-width: 700px; margin: 0 auto;">
+                <p class="contact-hero-description">
                     Desde mi espacio personal hacia el mundo digital, compartiendo ideas y colaborando 
                     en proyectos que integran creatividad y tecnología.
                 </p>
@@ -62,30 +62,30 @@
                                 Formas de Contacto
                             </h2>
                             
-                            <div style="margin-bottom: 3rem; padding: 2rem; background: rgba(139, 69, 19, 0.05); border-radius: var(--border-radius); border-left: 4px solid var(--color-primary);">
-                                <h3 style="font-family: var(--font-display); color: var(--color-primary); margin-bottom: 1.5rem; font-size: 1.5rem;">
+                            <div class="contact-card-primary">
+                                <h3 class="contact-card-title">
                                     Email directo
                                 </h3>
-                                <p style="font-family: 'Lato', sans-serif; color: var(--color-text-light); font-size: 1.1rem;">
-                                    <a href="mailto:alligator9339@protonmail.com" style="color: var(--color-secondary); text-decoration: none; font-weight: 600; transition: all 0.3s ease; font-size: 1.2rem;" onmouseover="this.style.color='var(--color-primary)'" onmouseout="this.style.color='var(--color-secondary)'">
+                                <p class="contact-card-text">
+                                    <a href="mailto:alligator9339@protonmail.com" class="contact-link">
                                         alligator9339@protonmail.com
                                     </a>
                                 </p>
                             </div>
 
-                            <div style="margin-bottom: 2rem; padding: 2rem; background: rgba(218, 165, 32, 0.05); border-radius: var(--border-radius); border-left: 4px solid var(--color-secondary);">
-                                <h3 style="font-family: var(--font-display); color: var(--color-primary); margin-bottom: 1.5rem; font-size: 1.5rem;">
+                            <div class="contact-card-secondary">
+                                <h3 class="contact-card-title">
                                     Espacios Creativos
                                 </h3>
-                                <div style="display: flex; flex-direction: column; gap: 1.2rem;">
-                                    <a href="https://github.com/MarcoS9309" target="_blank" style="color: var(--color-secondary); text-decoration: none; font-family: 'Lato', sans-serif; transition: all 0.3s ease; display: flex; align-items: center; gap: 1rem; font-size: 1.1rem;" onmouseover="this.style.color='var(--color-primary)'; this.style.transform='translateX(10px)'" onmouseout="this.style.color='var(--color-secondary)'; this.style.transform='translateX(0)'">
-                                        <span style="font-weight: bold;">GitHub:</span> <span>@MarcoS9309 - Proyectos de código y desarrollo</span>
+                                <div class="contact-links-container">
+                                    <a href="https://github.com/MarcoS9309" target="_blank" rel="noopener noreferrer" class="social-link-extended">
+                                        <span class="contact-link-label">GitHub:</span> <span>@MarcoS9309 - Proyectos de código y desarrollo</span>
                                     </a>
-                                    <a href="https://phantomlord123.blogspot.com/" target="_blank" style="color: var(--color-secondary); text-decoration: none; font-family: 'Lato', sans-serif; transition: all 0.3s ease; display: flex; align-items: center; gap: 1rem; font-size: 1.1rem;" onmouseover="this.style.color='var(--color-primary)'; this.style.transform='translateX(10px)'" onmouseout="this.style.color='var(--color-secondary)'; this.style.transform='translateX(0)'">
-                                        <span style="font-weight: bold;">Blog Principal:</span> <span>Entre recuerdos - Narrativas y reflexiones</span>
+                                    <a href="https://phantomlord123.blogspot.com/" target="_blank" rel="noopener noreferrer" class="social-link-extended">
+                                        <span class="contact-link-label">Blog Principal:</span> <span>Entre recuerdos - Narrativas y reflexiones</span>
                                     </a>
-                                    <a href="https://write.as/marcosv/" target="_blank" style="color: var(--color-secondary); text-decoration: none; font-family: 'Lato', sans-serif; transition: all 0.3s ease; display: flex; align-items: center; gap: 1rem; font-size: 1.1rem;" onmouseover="this.style.color='var(--color-primary)'; this.style.transform='translateX(10px)'" onmouseout="this.style.color='var(--color-secondary)'; this.style.transform='translateX(0)'">
-                                        <span style="font-weight: bold;">Escritos:</span> <span>write.as/marcosv - Ensayos y experimentación literaria</span>
+                                    <a href="https://write.as/marcosv/" target="_blank" rel="noopener noreferrer" class="social-link-extended">
+                                        <span class="contact-link-label">Escritos:</span> <span>write.as/marcosv - Ensayos y experimentación literaria</span>
                                     </a>
                                 </div>
                             </div>
