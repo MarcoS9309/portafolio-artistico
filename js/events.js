@@ -141,16 +141,101 @@ function debounce(func, wait) {
     };
 }
 
-// Optimized scroll handler
-const optimizedScrollHandler = debounce(function() {
+// ===== PERFORMANCE IMPROVEMENTS =====
+
+// Enhanced lazy loading with Intersection Observer
+function initLazyLoading() {
+    const images = document.querySelectorAll('img[loading="lazy"]');
+    
+    if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    img.classList.add('loaded');
+                    observer.unobserve(img);
+                }
+            });
+        }, {
+            rootMargin: '50px 0px'
+        });
+
+        images.forEach(img => imageObserver.observe(img));
+    } else {
+        // Fallback for older browsers
+        images.forEach(img => img.classList.add('loaded'));
+    }
+}
+
+// Optimize scroll handler with requestAnimationFrame
+let ticking = false;
+
+function updateParallax() {
     const hero = document.querySelector('.hero');
     if (hero) {
         const scrolled = window.pageYOffset;
-        const rate = scrolled * -0.5;
-        hero.style.transform = `translateY(${rate}px)`;
+        const rate = scrolled * -0.3; // Reduced intensity for better performance
+        hero.style.transform = `translate3d(0, ${rate}px, 0)`; // Use translate3d for hardware acceleration
     }
-}, 10);
+    ticking = false;
+}
+
+const optimizedScrollHandler = function() {
+    if (!ticking) {
+        requestAnimationFrame(updateParallax);
+        ticking = true;
+    }
+};
 
 // Replace existing scroll listener
-window.removeEventListener('scroll', function() {}); // Remove existing if any
-window.addEventListener('scroll', optimizedScrollHandler);
+window.removeEventListener('scroll', optimizedScrollHandler);
+window.addEventListener('scroll', optimizedScrollHandler, { passive: true });
+
+// Performance monitoring
+function logPerformanceMetrics() {
+    if ('performance' in window) {
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const perfData = performance.getEntriesByType('navigation')[0];
+                if (perfData) {
+                    console.log('🚀 Performance Metrics:');
+                    console.log(`  DOM Content Loaded: ${Math.round(perfData.domContentLoadedEventEnd - perfData.domContentLoadedEventStart)}ms`);
+                    console.log(`  Load Complete: ${Math.round(perfData.loadEventEnd - perfData.loadEventStart)}ms`);
+                }
+            }, 0);
+        });
+    }
+}
+
+// Initialize on DOM ready
+document.addEventListener('DOMContentLoaded', function() {
+    initLazyLoading();
+    logPerformanceMetrics();
+    
+    // Add skip link for accessibility
+    const body = document.body;
+    const skipLink = document.createElement('a');
+    skipLink.href = '#main-content';
+    skipLink.className = 'skip-link';
+    skipLink.textContent = 'Saltar al contenido principal';
+    body.insertBefore(skipLink, body.firstChild);
+    
+    // Add main content ID if not present
+    const main = document.querySelector('main');
+    if (main && !main.id) {
+        main.id = 'main-content';
+    }
+    
+    // Register service worker for PWA functionality
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/sw.js')
+                .then(function(registration) {
+                    console.log('✅ Service Worker registered successfully:', registration.scope);
+                })
+                .catch(function(error) {
+                    console.log('❌ Service Worker registration failed:', error);
+                });
+        });
+    }
+});

@@ -1309,11 +1309,114 @@ main {
     margin-bottom: 1.5rem;
 }
 
-.btn-group {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
+/* ===== PERFORMANCE OPTIMIZATIONS ===== */
+
+/* Preload critical fonts */
+@font-display: swap;
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #000000;
+        --secondary-color: #0000FF;
+        --text-color: #000000;
+        --background-light: #FFFFFF;
+        --background-white: #FFFFFF;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #D2B48C;
+        --secondary-color: #87CEEB;
+        --text-color: #E5E5E5;
+        --text-light: #CCCCCC;
+        --background-light: #1A1A1A;
+        --background-white: #2D2D2D;
+        --background-paper: #333333;
+    }
+    
+    body {
+        background-color: var(--background-light);
+        color: var(--text-color);
+    }
+}
+
+/* Print styles */
+@media print {
+    .chatbot-toggle,
+    .nav-custom,
+    .hero-gradient {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: black;
+        background: white;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+    
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+    }
+}
+
+/* Focus visible for better accessibility */
+:focus-visible {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 0 0 4px 4px;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Improve loading performance */
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+img[loading="lazy"].loaded {
+    opacity: 1;
 }
 
 /* Gallery item styles */
