@@ -28,10 +28,10 @@
     <!-- Contenido Principal -->
     <main>
         <!-- Imagen de encabezado -->
-        <section class="hero-image" style="background: linear-gradient(rgba(139, 69, 19, 0.7), rgba(218, 165, 32, 0.7)), url('https://i.ibb.co/MyV0WZkW/image.png') center/cover; height: 60vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center; margin-bottom: 3rem;">
-            <div style="max-width: 600px; padding: 2rem;">
-                <h1 style="font-family: var(--font-display); font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Individuación Artística</h1>
-                <p style="font-family: var(--font-elegant); font-size: 1.3rem; font-style: italic; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Donde las ideas encuentran su esencia en crear e innovar</p>
+        <section class="hero-image" style="background-image: url('https://i.ibb.co/MyV0WZkW/image.png');">
+            <div class="hero-image-content">
+                <h1 class="hero-image-title">Individuación Artística</h1>
+                <p class="hero-image-subtitle">Donde las ideas encuentran su esencia en crear e innovar</p>
             </div>
         </section>
 
@@ -39,7 +39,7 @@
             <div class="container">
                 <h1 class="section-title">Escritos y Proyectos Personales</h1>
                 <div class="ornament">—</div>
-                <p class="text-center mb-3" style="font-size: 1.2rem; color: var(--text-light); font-family: var(--font-elegant); font-style: italic; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <p class="text-center mb-3 gallery-description">
                     Una colección de mis <strong>escritos y proyectos</strong> que exploran la intersección entre creatividad, filosofía y programación. <em>La esencia radica en crear e innovar.</em>
                 </p>
 
@@ -47,15 +47,15 @@
                 <div class="grid grid-3" id="gallery">
                     
                     <!-- Trabajo Destacado: Espacio Virtual Personal -->
-                    <div class="gallery-item vintage-border" data-category="innovacion" style="grid-column: span 2; position: relative;">
-                        <div class="artwork-frame" style="height: 350px; background: linear-gradient(135deg, #5d4e75, #f7dc6f); display: flex; align-items: center; justify-content: center; color: white; font-size: 1rem; text-align: center; border-radius: var(--border-radius); position: relative; overflow: hidden;">
-                            <div class="artwork-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(93, 78, 117, 0.8);"></div>
-                            <div style="position: relative; z-index: 1; padding: 2rem;">
-                                <div style="background: rgba(255,255,255,0.1); border-radius: 50%; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 2rem;">🌟</div>
-                                <div style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Mi Espacio Virtual</div>
-                                <div style="font-family: var(--font-elegant); font-style: italic; opacity: 0.9; margin-bottom: 1rem; font-size: 1.2rem;">Cuaderno digital personal - Trabajo Destacado</div>
-                                <div style="font-size: 1rem; opacity: 0.8; margin-bottom: 1.5rem;">Un espacio donde comparto fragmentos de lo que estudio, pienso y experimento</div>
-                                <a href="https://github.com/MarcoS9309/desktop-tutorial" target="_blank" style="display: inline-block; background: linear-gradient(45deg, #fff, #f0f0f0); color: #5d4e75; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.2)'">Explorar Espacio</a>
+                    <div class="gallery-item vintage-border gallery-item-wide" data-category="innovacion">
+                        <div class="artwork-frame">
+                            <div class="artwork-overlay"></div>
+                            <div class="artwork-content">
+                                <div class="artwork-icon">🌟</div>
+                                <div class="artwork-title">Mi Espacio Virtual</div>
+                                <div class="artwork-subtitle">Cuaderno digital personal - Trabajo Destacado</div>
+                                <div class="artwork-description">Un espacio donde comparto fragmentos de lo que estudio, pienso y experimento</div>
+                                <a href="https://github.com/MarcoS9309/desktop-tutorial" target="_blank" rel="noopener noreferrer" class="btn-artwork">Explorar Espacio</a>
                             </div>
                         </div>
                     </div>
