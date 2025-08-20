@@ -28,10 +28,10 @@
     <!-- Contenido Principal -->
     <main>
         <!-- Imagen de encabezado -->
-        <section class="hero-image" style="background: linear-gradient(rgba(139, 69, 19, 0.7), rgba(218, 165, 32, 0.7)), url('https://i.ibb.co/MyV0WZkW/image.png') center/cover; height: 60vh; display: flex; align-items: center; justify-content: center; color: white; text-align: center; margin-bottom: 3rem;">
-            <div style="max-width: 600px; padding: 2rem;">
-                <h1 style="font-family: var(--font-display); font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Individuación Artística</h1>
-                <p style="font-family: var(--font-elegant); font-size: 1.3rem; font-style: italic; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Donde las ideas encuentran su esencia en crear e innovar</p>
+        <section class="hero-image" style="background-image: url('https://i.ibb.co/MyV0WZkW/image.png');">
+            <div class="hero-image-content">
+                <h1 class="hero-image-title">Individuación Artística</h1>
+                <p class="hero-image-subtitle">Donde las ideas encuentran su esencia en crear e innovar</p>
             </div>
         </section>
 
@@ -39,7 +39,7 @@
             <div class="container">
                 <h1 class="section-title">Escritos y Proyectos Personales</h1>
                 <div class="ornament">—</div>
-                <p class="text-center mb-3" style="font-size: 1.2rem; color: var(--text-light); font-family: var(--font-elegant); font-style: italic; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <p class="text-center mb-3 gallery-description">
                     Una colección de mis <strong>escritos y proyectos</strong> que exploran la intersección entre creatividad, filosofía y programación. <em>La esencia radica en crear e innovar.</em>
                 </p>
 
@@ -47,72 +47,72 @@
                 <div class="grid grid-3" id="gallery">
                     
                     <!-- Trabajo Destacado: Espacio Virtual Personal -->
-                    <div class="gallery-item vintage-border" data-category="innovacion" style="grid-column: span 2; position: relative;">
-                        <div class="artwork-frame" style="height: 350px; background: linear-gradient(135deg, #5d4e75, #f7dc6f); display: flex; align-items: center; justify-content: center; color: white; font-size: 1rem; text-align: center; border-radius: var(--border-radius); position: relative; overflow: hidden;">
-                            <div class="artwork-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(93, 78, 117, 0.8);"></div>
-                            <div style="position: relative; z-index: 1; padding: 2rem;">
-                                <div style="background: rgba(255,255,255,0.1); border-radius: 50%; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 2rem;">🌟</div>
-                                <div style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Mi Espacio Virtual</div>
-                                <div style="font-family: var(--font-elegant); font-style: italic; opacity: 0.9; margin-bottom: 1rem; font-size: 1.2rem;">Cuaderno digital personal - Trabajo Destacado</div>
-                                <div style="font-size: 1rem; opacity: 0.8; margin-bottom: 1.5rem;">Un espacio donde comparto fragmentos de lo que estudio, pienso y experimento</div>
-                                <a href="https://github.com/MarcoS9309/desktop-tutorial" target="_blank" style="display: inline-block; background: linear-gradient(45deg, #fff, #f0f0f0); color: #5d4e75; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(0,0,0,0.3)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.2)'">Explorar Espacio</a>
+                    <div class="gallery-item vintage-border gallery-item-wide" data-category="innovacion">
+                        <div class="artwork-frame">
+                            <div class="artwork-overlay"></div>
+                            <div class="artwork-content">
+                                <div class="artwork-icon">🌟</div>
+                                <div class="artwork-title">Mi Espacio Virtual</div>
+                                <div class="artwork-subtitle">Cuaderno digital personal - Trabajo Destacado</div>
+                                <div class="artwork-description">Un espacio donde comparto fragmentos de lo que estudio, pienso y experimento</div>
+                                <a href="https://github.com/MarcoS9309/desktop-tutorial" target="_blank" rel="noopener noreferrer" class="btn-artwork">Explorar Espacio</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Fábulas Emocionales -->
                     <div class="gallery-item vintage-border" data-category="proyectos">
-                        <div class="artwork-frame" style="height: 350px; background: linear-gradient(135deg, #8e44ad, #3498db); display: flex; align-items: center; justify-content: center; color: white; font-size: 1rem; text-align: center; border-radius: var(--border-radius); position: relative; overflow: hidden;">
-                            <div class="artwork-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(142, 68, 173, 0.7);"></div>
-                            <div style="position: relative; z-index: 1; padding: 1.5rem;">
-                                <div style="background: rgba(255,255,255,0.2); border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem;">📚</div>
-                                <div style="font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Fábulas Emocionales</div>
-                                <div style="font-family: var(--font-elegant); font-style: italic; opacity: 0.9; margin-bottom: 1rem;">Juego interactivo</div>
-                                <div style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1.5rem;">Responde con tu estado emocional y accede a fábulas personalizadas</div>
-                                <a href="https://github.com/MarcoS9309/desktop-tutorial/blob/main/FabulasEmocionales/index.html" target="_blank" style="display: inline-block; background: rgba(255,255,255,0.9); color: #8e44ad; padding: 0.8rem 1.5rem; border-radius: 25px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.background='white'" onmouseout="this.style.transform='scale(1)'; this.style.background='rgba(255,255,255,0.9)'">Jugar</a>
+                        <div class="artwork-frame-purple">
+                            <div class="artwork-overlay-purple"></div>
+                            <div class="artwork-content-center">
+                                <div class="artwork-icon-small">📚</div>
+                                <div class="artwork-title-small">Fábulas Emocionales</div>
+                                <div class="artwork-subtitle-small">Juego interactivo</div>
+                                <div class="artwork-description-small">Responde con tu estado emocional y accede a fábulas personalizadas</div>
+                                <a href="https://github.com/MarcoS9309/desktop-tutorial/blob/main/FabulasEmocionales/index.html" target="_blank" rel="noopener noreferrer" class="btn-play">Jugar</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Juego Experimental Web -->
                     <div class="gallery-item vintage-border" data-category="proyectos">
-                        <div class="artwork-frame" style="height: 350px; background: linear-gradient(135deg, #e67e22, #d35400); display: flex; align-items: center; justify-content: center; color: white; font-size: 1rem; text-align: center; border-radius: var(--border-radius); position: relative; overflow: hidden;">
-                            <div class="artwork-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(230, 126, 34, 0.8);"></div>
-                            <div style="position: relative; z-index: 1; padding: 1.5rem;">
-                                <div style="background: rgba(255,255,255,0.2); border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem;">🎮</div>
-                                <div style="font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Juego Experimental</div>
-                                <div style="font-family: var(--font-elegant); font-style: italic; opacity: 0.9; margin-bottom: 1rem;">Exploración interactiva</div>
-                                <div style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1.5rem;">Experimento web con elementos visuales y narrativos</div>
-                                <a href="https://marcos9309.github.io/desktop-tutorial/game.html" target="_blank" style="display: inline-block; background: rgba(255,255,255,0.9); color: #e67e22; padding: 0.8rem 1.5rem; border-radius: 25px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.background='white'" onmouseout="this.style.transform='scale(1)'; this.style.background='rgba(255,255,255,0.9)'">Jugar Ahora</a>
+                        <div class="artwork-frame-orange">
+                            <div class="artwork-overlay-orange"></div>
+                            <div class="artwork-content-center">
+                                <div class="artwork-icon-small">🎮</div>
+                                <div class="artwork-title-small">Juego Experimental</div>
+                                <div class="artwork-subtitle-small">Exploración interactiva</div>
+                                <div class="artwork-description-small">Experimento web con elementos visuales y narrativos</div>
+                                <a href="https://marcos9309.github.io/desktop-tutorial/game.html" target="_blank" rel="noopener noreferrer" class="btn-play-orange">Jugar Ahora</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- GameOver4 - Proyecto de Código -->
                     <div class="gallery-item vintage-border" data-category="innovacion">
-                        <div class="artwork-frame" style="height: 350px; background: linear-gradient(135deg, #2c3e50, #34495e); display: flex; align-items: center; justify-content: center; color: white; font-size: 1rem; text-align: center; border-radius: var(--border-radius); position: relative; overflow: hidden;">
-                            <div class="artwork-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(44, 62, 80, 0.8);"></div>
-                            <div style="position: relative; z-index: 1; padding: 1.5rem;">
-                                <div style="background: rgba(255,255,255,0.2); border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem;">💻</div>
-                                <div style="font-family: var(--font-display); font-size: 1.4rem; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">GameOver4</div>
-                                <div style="font-family: var(--font-elegant); font-style: italic; opacity: 0.9; margin-bottom: 1rem;">Código experimental</div>
-                                <div style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1.5rem;">Proyecto de experimentación con JavaScript y mecánicas de juego</div>
-                                <a href="https://github.com/MarcoS9309/gameover4" target="_blank" style="display: inline-block; background: rgba(255,255,255,0.9); color: #2c3e50; padding: 0.8rem 1.5rem; border-radius: 25px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'; this.style.background='white'" onmouseout="this.style.transform='scale(1)'; this.style.background='rgba(255,255,255,0.9)'">Ver Código</a>
+                        <div class="artwork-frame-dark">
+                            <div class="artwork-overlay-dark"></div>
+                            <div class="artwork-content-center">
+                                <div class="artwork-icon-small">💻</div>
+                                <div class="artwork-title-small">GameOver4</div>
+                                <div class="artwork-subtitle-small">Código experimental</div>
+                                <div class="artwork-description-small">Proyecto de experimentación con JavaScript y mecánicas de juego</div>
+                                <a href="https://github.com/MarcoS9309/gameover4" target="_blank" rel="noopener noreferrer" class="btn-code">Ver Código</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Escritos de Ficción del Blog -->
-                    <div class="gallery-item vintage-border" data-category="ficcion" style="grid-column: span 2;">
-                        <div class="artwork-frame" style="height: 300px; background: linear-gradient(135deg, #34495e, #2c3e50); display: flex; align-items: center; justify-content: center; color: white; font-size: 1rem; text-align: center; border-radius: var(--border-radius); position: relative; overflow: hidden;">
-                            <img src="https://i.ibb.co/PshH3FG3/IMG-2073-2.jpg" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.4;" alt="Narrativas de ficción">
-                            <div class="artwork-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(44, 62, 80, 0.7);"></div>
-                            <div style="position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; z-index: 2;">
-                                <div style="font-family: var(--font-display); font-size: 1.8rem; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Narrativas de Ficción</div>
-                                <div style="font-family: var(--font-elegant); font-style: italic; opacity: 0.9; margin-bottom: 1rem;">Cuentos, leyendas y reflexiones creativas</div>
-                                <div style="display: flex; gap: 1rem; justify-content: center;">
-                                    <a href="https://phantomlord123.blogspot.com/" target="_blank" style="background: linear-gradient(45deg, #e74c3c, #c0392b); color: white; padding: 0.8rem 1.5rem; border-radius: 25px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">Blog Principal</a>
-                                    <a href="https://write.as/marcosv/" target="_blank" style="background: linear-gradient(45deg, #27ae60, #2ecc71); color: white; padding: 0.8rem 1.5rem; border-radius: 25px; text-decoration: none; font-weight: bold; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='translateY(0)'">Escritos</a>
+                    <div class="gallery-item vintage-border gallery-item-wide" data-category="ficcion">
+                        <div class="artwork-frame-wide">
+                            <img src="https://i.ibb.co/PshH3FG3/IMG-2073-2.jpg" class="artwork-image" alt="Narrativas de ficción - Imagen de fondo mostrando escritura creativa" loading="lazy">
+                            <div class="artwork-overlay-dark-image"></div>
+                            <div class="artwork-content-bottom">
+                                <div class="artwork-title-large">Narrativas de Ficción</div>
+                                <div class="artwork-subtitle">Cuentos, leyendas y reflexiones creativas</div>
+                                <div class="btn-group">
+                                    <a href="https://phantomlord123.blogspot.com/" target="_blank" rel="noopener noreferrer" class="btn-blog">Blog Principal</a>
+                                    <a href="https://write.as/marcosv/" target="_blank" rel="noopener noreferrer" class="btn-escritos">Escritos</a>
                                 </div>
                             </div>
                         </div>

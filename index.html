@@ -21,9 +21,39 @@
     <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';">
     
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marcos9309.github.io/portafolio-artistico/">
+    <meta property="og:title" content="Individuación y Creación - Marcos">
+    <meta property="og:description" content="Creaciones digitales y escritos reflexivos - Tecnología, filosofía y experiencia personal">
+    <meta property="og:image" content="https://marcos9309.github.io/portafolio-artistico/images/og-image.jpg">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://marcos9309.github.io/portafolio-artistico/">
+    <meta property="twitter:title" content="Individuación y Creación - Marcos">
+    <meta property="twitter:description" content="Creaciones digitales y escritos reflexivos - Tecnología, filosofía y experiencia personal">
+    <meta property="twitter:image" content="https://marcos9309.github.io/portafolio-artistico/images/og-image.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://marcos9309.github.io/portafolio-artistico/">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="images/icon-192x192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Portafolio Marcos">
+    
     <title>Individuación y Creación - Marcos</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/chatbot.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
@@ -51,7 +81,7 @@
                 <p class="hero-subtitle">
                     En un rincón de mi hogar, y con ideas, comparto creaciones que integran tecnología, reflexión y experiencia personal
                 </p>
-                <div class="ornament" style="color: rgba(255,255,255,0.8); margin: 2rem 0; font-size: 1.5rem;">—</div>
+                <div class="ornament">—</div>
                 <a href="galeria.html" class="btn">Explorar mis Creaciones</a>
             </div>
         </section>
@@ -121,16 +151,16 @@
         </section>
 
         <!-- Acceso a Creaciones -->
-        <section class="section" style="background: linear-gradient(135deg, rgba(139, 69, 19, 0.05), rgba(218, 165, 32, 0.05)); padding: 3rem 0;">
+        <section class="section hero-gradient">
             <div class="container text-center">
-                <h2 style="font-family: var(--font-display); font-size: 2.5rem; color: var(--primary-color); margin-bottom: 1.5rem;">
+                <h2 class="hero-title-large">
                     Explora Mis Creaciones
                 </h2>
-                <p style="font-family: var(--font-body); font-size: 1.2rem; color: var(--text-light); margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                <p class="hero-description">
                     Descubre mis escritos, proyectos de desarrollo y reflexiones que integran 
                     tecnología, filosofía y experiencia personal en un diálogo creativo e innovador.
                 </p>
-                <a href="galeria.html" style="display: inline-block; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: var(--background-white); padding: 1.2rem 3rem; border-radius: 30px; text-decoration: none; font-family: var(--font-body); font-weight: 600; font-size: 1.1rem; box-shadow: 0 8px 25px rgba(139, 69, 19, 0.3); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 35px rgba(139, 69, 19, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(139, 69, 19, 0.3)'">
+                <a href="galeria.html" class="btn-gradient">
                     Ver Todas las Creaciones
                 </a>
             </div>
@@ -141,13 +171,13 @@
     <footer class="footer">
         <div class="container">
             <div class="social-links">
-                <a href="mailto:alligator9339@protonmail.com" class="social-link" aria-label="Email">📧</a>
-                <a href="https://x.com/tu_usuario" class="social-link" aria-label="X (Twitter)" target="_blank">𝕏</a>
-                <a href="https://github.com/tu_usuario" class="social-link" aria-label="GitHub" target="_blank">⚡</a>
+                <a href="mailto:alligator9339@protonmail.com" class="social-link" aria-label="Contacto por Email">📧</a>
+                <a href="https://x.com/tu_usuario" class="social-link" aria-label="Seguir en X (Twitter)" target="_blank" rel="noopener noreferrer">𝕏</a>
+                <a href="https://github.com/tu_usuario" class="social-link" aria-label="Ver proyectos en GitHub" target="_blank" rel="noopener noreferrer">⚡</a>
             </div>
             <p>&copy; 2025 Individuación y creación. Valorando la tecnología como herramienta de creación y manifestación en un mundo virtual.</p>
-            <p style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.7;">
-                Todo el contenido está protegido bajo <a href="LICENSE" style="color: inherit; text-decoration: underline;">Licencia MIT</a>. 
+            <p class="footer-legal">
+                Todo el contenido está protegido bajo <a href="LICENSE" class="footer-link">Licencia MIT</a>. 
                 Los textos originales y contenido creativo están sujetos a derechos de autor.
             </p>
         </div>
@@ -155,22 +185,24 @@
 
     <!-- Chatbot -->
     <!-- Botón flotante del chatbot -->
-    <button id="chatbot-toggle" onclick="toggleChatbot()">💬</button>
+    <button id="chatbot-toggle" class="chatbot-toggle" aria-label="Abrir asistente virtual">💬</button>
 
     <!-- Ventana del chatbot -->
     <div id="chatbot-box">
         <div class="chatbot-header">
             <span>💬 Asistente virtual de las creaciones de Marco</span>
-            <button onclick="toggleChatbot()" class="close-btn">✕</button>
+            <button class="close-btn" aria-label="Cerrar asistente virtual">✕</button>
         </div>
         <div id="chat-messages"></div>
         <div class="chatbot-input-area">
-            <input type="text" id="chatbot-input" placeholder="Escribe aquí..." onkeydown="if(event.key==='Enter') sendMessage()"/>
-            <button id="chatbot-send" onclick="sendMessage()">▶</button>
+            <label for="chatbot-input" class="sr-only">Escribe tu mensaje</label>
+            <input type="text" id="chatbot-input" placeholder="Escribe aquí..." />
+            <button id="chatbot-send" aria-label="Enviar mensaje">▶</button>
         </div>
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/events.js"></script>
     <script src="js/chatbot.js"></script>
 </body>
 </html>
